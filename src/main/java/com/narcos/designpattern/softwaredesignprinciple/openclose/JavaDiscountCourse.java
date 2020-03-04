@@ -1,6 +1,8 @@
 package com.narcos.designpattern.softwaredesignprinciple.openclose;
 
 /**
+ * 演示开闭原则例子
+ *
  * @author hbj
  * @date 2020/3/4 1:14 下午
  */
