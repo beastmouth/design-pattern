@@ -15,6 +15,10 @@ public class JavaDiscountCourse extends JavaCourse {
         return super.getPrice();
     }
 
+    /**
+     * 此处不遵循里氏替换原则，因为修改了父类的非抽象方法
+     * 遵循里氏替换原则的写法见JavaDiscountCourse2
+     */
     @Override
     public Double getPrice() {
         return super.getPrice() * 0.8;
