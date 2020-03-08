@@ -6,6 +6,7 @@ package com.narcos.designpattern.designpattern.creational.simplefactory;
  */
 public class VideoFactory {
     // 类似的实现代码：Calendar createInstance
+    // 此处便不遵循开闭原则。此时若要添加一种新的课程，则需要对getVideo方法修改
 //    public Video getVideo(String type) {
 //        if ("java".equalsIgnoreCase(type)) {
 //            return new JavaVideo();

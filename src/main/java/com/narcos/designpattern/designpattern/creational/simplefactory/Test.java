@@ -1,6 +1,8 @@
 package com.narcos.designpattern.designpattern.creational.simplefactory;
 
 /**
+ * 简单工厂模式
+ *
  * @author hbj
  * @date 2020/3/6 10:01 下午
  */
