@@ -14,7 +14,10 @@ public class LazySingleton implements Serializable {
     private volatile static LazySingleton lazySingleton;
 
     private LazySingleton() {
-
+        // 解决反射攻击
+        if (lazySingleton != null) {
+            throw new RuntimeException("单例模式禁止被反射调用");
+        }
     }
 
 //    public static LazySingleton getInstance() {
@@ -50,6 +53,7 @@ public class LazySingleton implements Serializable {
         return lazySingleton;
     }
 
+    // 解决序列化破坏
     private Object readResolve() {
         return lazySingleton;
     }
